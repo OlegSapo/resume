@@ -1,0 +1,51 @@
+<div>
+    {{#if big}}
+    <h2>{{dataa}}</h2>
+    {{/if}}
+
+    {{#unless big}}
+    <h3>{{dataa}}</h3>
+    {{/unless}}
+</div>
+
+
+<div>
+    {{#if big}}
+    {{#with data}}
+    <div>
+        <h2>{{title}}</h2>
+    </div>
+    <div>
+        <p>
+            {{text}}
+        </p>
+    </div>
+    {{/with}}
+    {{/if}}
+
+    {{#unless big}}
+    {{#with data}}
+    <div>
+        <h3>{{title}}</h3>
+    </div>
+    <div>
+        <p>
+            {{text}}
+        </p>
+    </div>
+    {{/with}}
+    {{/unless}}
+</div>
+
+
+
+{{!-- {{#with data}}
+<div>
+    <h2>{{title}}</h2>
+</div>
+<div>
+    <p>
+        {{text}}
+    </p>
+</div>
+{{/with}} --}}
