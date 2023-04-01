@@ -1,75 +1,5 @@
-<h1>PROGRAM</h1>
+<h1>PROGRAM of your TOUR</h1>
 <hr>
-
-{{!-- <div>
-    {{#with program}}
-    <main>
-        <div>
-            {{#with excursion}}
-            <div><b>Name: </b>{{name}}</div>
-            {{#with location}}
-            <section>
-                <div><b>City: </b>{{city}}</div>
-                <div><b>Country: </b>{{country}}</div>
-            </section>
-            {{/with}}
-            <div><b>Date: </b>{{date}}</div>
-            <div><b>Program: </b></div>
-            <ol>
-                {{#each program}}
-                <li>
-                    <div>Name: <i>{{name}}</i></div>
-                    <div>Type: <i>{{type}}</i></div>
-                    <div>Duration ({{duration}})</div>
-                    <div>Details:</div>
-                    <section>
-                        {{#with details}}
-                        <div>Museum:</div>
-                        <section>
-                            {{#with museum}}
-                            <div>Name: <i>{{name}}</i></div>
-                            <div>Location:</div>
-                            <section>
-                                {{#with location}}
-                                <div>Address: <i>{{address}}</i></div>
-                                <div>City: <i>{{city}}</i></div>
-                                <div>Country: <i>{{country}}</i></div>
-                                {{/with}}
-                            </section>
-                            <div>Exhibits:</div>
-                            <ol type="a">
-                                {{#each exhibits}}
-                                <li>
-                                    <div>Name: <i>{{name}}</i></div>
-                                    <div>Artist: <i>{{artist}}</i></div>
-                                    <div>Description: <i>{{description}}</i></div>
-                                    <div>Audiogiude ({{audio_guide}})</div>
-                                    <br>
-                                </li>
-                                {{/each}}
-                            </ol>
-                            {{/with}}
-                            <div>Guide:</div>
-                            <section>
-                                {{#with guide}}
-                                <div>Name: <i>{{name}}</i></div>
-                                <div>Language: <i>{{language}}</i></div>
-                                <div>Rating: <i>{{rating}}</i></div>
-                                {{/with}}
-                            </section>
-                        </section>
-                        {{/with}}
-                    </section>
-                </li>
-                {{/each}}
-            </ol>
-            {{/with}}
-        </div>
-    </main>
-    {{/with}}
-</div> --}}
-
-
 
 <div>
     {{#with program}}
@@ -96,6 +26,7 @@
                     <section>
                         {{#with details}}
                         <section>
+
                             {{#with museum}}
                             <div><b>Museum:</b></div>
                             <div>Name: <i>{{name}}</i></div>
@@ -153,19 +84,12 @@
                             </section>
                         </section>
                         {{/with}}
+
                     </section>
                     <hr>
                 </li>
                 {{/each}}
             </ol>
-
-
-
-
-
-
-
-
             {{/with}}
         </div>
     </main>
