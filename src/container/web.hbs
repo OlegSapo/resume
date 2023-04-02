@@ -1,0 +1,87 @@
+<h1>WEB, languages:</h1>
+<hr>
+
+<div>
+    {{#with web}}
+    <main>
+        <ol>
+            {{#each languages}}
+            <li>
+                <div><b>Name: </b>{{name}}</div>
+                <div><b>Version:</b>{{version}}</div>
+                <div><b>Description:</b> <dfn>{{description}}</dfn></div>
+
+                {{#if elements}}
+                <div><b>Elements: </b></div>
+                <br>
+                <ol type="A">
+                    {{#each elements}}
+                    <li>
+                        <div><b>Name: </b>{{name}}</div>
+                        <div><b>Description:</b> <dfn>{{description}}</dfn></div>
+                        <div><b>Attributes: </b></div>
+                        <ol type="a">
+                            {{#each attributes}}
+                            <li>
+                                <div>Name: {{name}}</div>
+                                <div>Description: <dfn>{{description}}</dfn></div>
+                            </li>
+                            {{/each}}
+                        </ol>
+                    </li>
+                    {{/each}}
+                </ol>
+                {{/if}}
+
+                {{#if properties}}
+                <div><b>Properties: </b></div>
+                <br>
+                <ol type="A">
+                    {{#each properties}}
+                    <li>
+                        <div><b>Name: </b>{{name}}</div>
+                        <div><b>Description:</b> <dfn>{{description}}</dfn></div>
+                        <div><b>Values: </b></div>
+                        <ol type="a">
+                            {{#each values}}
+                            <li>
+                                <div>Value: {{value}}</div>
+                                <div>Description: <dfn>{{description}}</dfn></div>
+                            </li>
+                            {{/each}}
+                        </ol>
+                    </li>
+                    {{/each}}
+                </ol>
+                {{/if}}
+
+                {{#if functions}}
+                <div><b>Functions: </b></div>
+                <br>
+                <ol type="A">
+                    {{#each functions}}
+                    <li>
+                        <div><b>Name: </b>{{name}}</div>
+                        <div><b>Description:</b> <dfn>{{description}}</dfn></div>
+                        <div><b>Parameters: </b></div>
+                        <ol type="a">
+                            {{#each parameters}}
+                            <li>
+                                <div>Name: {{name}}</div>
+                                <div>Type: {{type}}</div>
+                                <div>Description: <dfn>{{description}}</dfn></div>
+                            </li>
+                            {{/each}}
+                        </ol>
+                    </li>
+                    {{/each}}
+                </ol>
+                {{/if}}
+
+            </li>
+            <br>
+            {{/each}}
+        </ol>
+    </main>
+    {{/with}}
+</div>
