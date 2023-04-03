@@ -1,0 +1,254 @@
+<h1>&nbsp;CAR</h1>
+<hr>
+
+<div>
+    <main>
+        <span class="badge text-bg-primary">Make: </span>
+        <span>{{make}}</span>
+        <br>
+
+        <span class="badge text-bg-primary">Model: </span>
+        <span>{{model}}</span>
+        <br>
+
+        <span class="badge text-bg-primary">Year: </span>
+        <span>{{year}}</span>
+        <br>
+
+        <span class="badge text-bg-primary">Color: </span>
+        <span>{{color}}</span>
+        <br>
+
+        <span class="badge text-bg-primary">Features: </span>
+        <section>
+            <span class="badge text-bg-secondary">Interior: </span>
+            <section>
+                <span class="badge text-bg-info">Seats:</span>
+                <section>
+                    <span class="badge text-bg-dark">Material: </span>
+                    {{features.interior.seats.material}}
+                    <br>
+                    <span class="badge text-bg-dark">Color: </span>
+                    {{features.interior.seats.color}}
+                    <br>
+                    <span class="badge text-bg-dark">Heated: </span>
+                    {{features.interior.seats.heated}}
+                    <br>
+                    <span class="badge text-bg-dark">Ventilated: </span>
+                    {{features.interior.seats.ventilated}}
+                </section>
+
+                <span class="badge text-bg-info">Dashboard:</span>
+                <section>
+                    <span class="badge text-bg-dark">Material: </span>
+                    {{features.interior.dashboard.material}}
+                    <br>
+
+                    <span class="badge text-bg-dark">Сolor: </span>
+                    {{features.interior.dashboard.color}}
+                    <br>
+
+                    <span class="badge text-bg-dark">Display: </span>
+                    <section>
+                        <span class="badge text-bg-warning">Type: </span>
+                        {{features.interior.dashboard.display.type}}
+                        <br>
+
+                        <span class="badge text-bg-warning">Size: </span>
+                        {{features.interior.dashboard.display.size}}
+                        <br>
+
+                        <span class="badge text-bg-warning">Resolution: </span>
+                        {{features.interior.dashboard.display.resolution}}
+                        <br>
+
+                        <span class="badge text-bg-warning">Touchscreen: </span>
+                        {{features.interior.dashboard.display.touchscreen}}
+                    </section>
+                </section>
+
+                <span class="badge text-bg-info">Audio: </span>
+                <section>
+                    <span class="badge text-bg-dark">System: </span>
+                    {{features.interior.audio.system}}
+                    <br>
+
+                    <span class="badge text-bg-dark">Speakers: </span>
+                    {{features.interior.audio.speakers}}
+                    <br>
+
+                    <span class="badge text-bg-dark">Subwoofer: </span>
+                    {{features.interior.audio.subwoofer}}
+                    <br>
+
+                    <span class="badge text-bg-dark">Bluetooth: </span>
+                    {{features.interior.audio.bluetooth}}
+                    <br>
+
+                    <span class="badge text-bg-dark">USB: </span>
+                    {{features.interior.audio.USB}}
+                </section>
+            </section>
+
+            <span class="badge text-bg-secondary">Exterior: </span>
+            <section>
+                <span class="badge text-bg-info">Wheels:</span>
+                <section>
+                    <span class="badge text-bg-dark">Size: </span>
+                    {{features.exterior.wheels.size}}
+                    <br>
+
+                    <span class="badge text-bg-dark">Type: </span>
+                    {{features.exterior.wheels.type}}
+                    <br>
+
+                    <span class="badge text-bg-dark">Color: </span>
+                    {{features.exterior.wheels.color}}
+                </section>
+
+                <span class="badge text-bg-info">Headlights:</span>
+                <section>
+                    <span class="badge text-bg-dark">Type: </span>
+                    {{features.exterior.headlights.type}}
+                    <br>
+
+                    <span class="badge text-bg-dark">Brightness: </span>
+                    {{features.exterior.headlights.brightness}}
+                    <br>
+
+                    <span class="badge text-bg-dark">Automatic: </span>
+                    {{features.exterior.headlights.automatic}}
+                </section>
+
+                <span class="badge text-bg-info">Sunroof:</span>
+                <section>
+                    <span class="badge text-bg-dark">Type: </span>
+                    {{features.exterior.sunroof.type}}
+                    <br>
+
+                    <span class="badge text-bg-dark">Size: </span>
+                    {{features.exterior.sunroof.size}}
+                    <br>
+
+                    <span class="badge text-bg-dark">Automatic: </span>
+                    {{features.exterior.sunroof.automatic}}
+                </section>
+            </section>
+
+            <span class="badge text-bg-secondary">Safety: </span>
+            <section>
+                <span class="badge text-bg-info">Airbags:</span>
+                <section>
+                    <span class="badge text-bg-dark">Front: </span>
+                    {{features.safety.airbags.front}}
+                    <br>
+
+                    <span class="badge text-bg-dark">Side: </span>
+                    {{features.safety.airbags.side}}
+                    <br>
+
+                    <span class="badge text-bg-dark">Knee: </span>
+                    {{features.safety.airbags.knee}}
+                    <br>
+
+                    <span class="badge text-bg-dark">Rear: </span>
+                    {{features.safety.airbags.rear}}
+                </section>
+
+                <span class="badge text-bg-info">Assistance:</span>
+                <section>
+                    <span class="badge text-bg-dark">Blind_spot_monitoring: </span>
+                    {{features.safety.assistance.blind_spot_monitoring}}
+                    <br>
+
+                    <span class="badge text-bg-dark">Rear_cross_traffic_alert: </span>
+                    {{features.safety.assistance.rear_cross_traffic_alert}}
+                    <br>
+
+                    <span class="badge text-bg-dark">Lane_departure_warning: </span>
+                    {{features.safety.assistance.lane_departure_warning}}
+                    <br>
+
+                    <span class="badge text-bg-dark">Adaptive_cruise_control: </span>
+                    {{features.safety.assistance.adaptive_cruise_control}}
+                    <br>
+
+                    <span class="badge text-bg-dark">Collision_warning: </span>
+                    {{features.safety.assistance.collision_warning}}
+                </section>
+            </section>
+        </section>
+
+        <span class="badge text-bg-primary">Engine: </span>
+        <section>
+            <span class="badge text-bg-secondary">Type: </span>
+            {{engine.type}}
+            <br>
+
+            <span class="badge text-bg-secondary">Displacement: </span>
+            {{engine.displacement}}
+            <br>
+
+            <span class="badge text-bg-secondary">Horsepower: </span>
+            {{engine.horsepower}}
+            <br>
+
+            <span class="badge text-bg-secondary">Torque: </span>
+            {{engine.torque}}
+            <br>
+
+            <span class="badge text-bg-secondary">Transmission: </span>
+            <section>
+                <span class="badge text-bg-info">Type:</span>
+                {{engine.transmission.type}}
+                <br>
+
+                <span class="badge text-bg-info">Gears:</span>
+                {{engine.transmission.gears}}
+            </section>
+        </section>
+
+        <span class="badge text-bg-primary">Fuel_economy: </span>
+        <section>
+            <span class="badge text-bg-secondary">City: </span>
+            {{fuel_economy.city}}
+            <br>
+
+            <span class="badge text-bg-secondary">Highway: </span>
+            {{fuel_economy.highway}}
+            <br>
+
+            <span class="badge text-bg-secondary">Combined: </span>
+            {{fuel_economy.combined}}
+            <br>
+        </section>
+
+        <span class="badge text-bg-primary">Price: </span>
+        <section>
+            <span class="badge text-bg-secondary">Base: </span>
+            {{price.base}}
+            <br>
+
+            <span class="badge text-bg-secondary">Destination: </span>
+            {{price.destination}}
+            <br>
+
+            <span class="badge text-bg-secondary">Options: </span>
+            <section>
+                <span class="badge text-bg-info">Navigation:</span>
+                {{price.options.navigation}}
+                <br>
+
+                <span class="badge text-bg-info">Moonroof:</span>
+                {{price.options.moonroof}}
+                <br>
+
+                <span class="badge text-bg-info">Premium_paint:</span>
+                {{price.options.premium_paint}}
+            </section>
+
+            <span class="badge text-bg-secondary">Total: </span>
+            {{price.total}}
+        </section>
+    </main>
+</div>`
