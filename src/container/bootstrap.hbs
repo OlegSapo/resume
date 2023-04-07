@@ -163,6 +163,7 @@
 
     </div> --}}
 
+    {{!--
     <hr>
 
     <div class="row g-2">
@@ -215,17 +216,24 @@
                     <h2>Hello, <span class="badge text-bg-primary">World!!!</span></h2>
                     <buttton class="btn btn-primary rounded-pill text-uppercase btn-lg">ok</buttton>
 
-
                 </div>
-
 
             </div>
 
-
-
-
         </div>
 
+    </div> --}}
+
+    <div>
+        <ul>
+            {{#each list}}
+            <li>
+                <span>{{@index}}</span>
+                {{#if @first}}First element - {{/if}}
+                <span>{{name}}</span>
+            </li>
+            {{/each}}
+        </ul>
     </div>
 
 </main>
