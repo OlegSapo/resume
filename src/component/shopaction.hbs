@@ -1,0 +1,11 @@
+<div class="card text-bg-success">
+    {{#with srvc}}
+    <h2 class="text-center pt-2">{{title}}</h2>
+    <p class="text-center pb-0">{{description}}
+        <br>
+        <button class="btn btn-primary mt-4">
+            <a href={{buttons.[0].link}} class="text-light">{{buttons.[0].text}}</a>
+        </button>
+    </p>
+    {{/with}}
+</div>

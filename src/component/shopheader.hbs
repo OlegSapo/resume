@@ -1,0 +1,20 @@
+<div class="card">
+    <div class="row">
+        <div class="col-2">
+            <h2 class="ps-2 py-4">{{logo}}</h2>
+        </div>
+
+        <div class="col-5"></div>
+
+        <div class="col-5">
+            <div class="nav">
+                {{#each navgtn}}
+                <div class="nav-item pt-4 px-2">
+                    <a href={{href}}>{{text}}</a>
+                </div>
+                {{/each}}
+                <div class="nav-item pt-4 px-2">Disabled</div>
+            </div>
+        </div>
+    </div>
+</div>

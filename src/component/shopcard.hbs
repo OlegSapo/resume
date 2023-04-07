@@ -1,0 +1,16 @@
+<div class="card">
+    {{#with crd}}
+    <img class="card-img-top" src={{image}} alt="foto product">
+    <div class="card-body">
+        <span><b>{{title}}</b></span>
+        {{#if isHot}}
+        <span class="badge text-bg-warning rounded-pill">Top!</span>
+        {{/if}}
+        {{#if isNew}}
+        <span class="badge text-bg-primary rounded-pill">New</span>
+        {{/if}}
+        <br>
+        <div class="mt-2 mb-0">{{description}}</div>
+    </div>
+    {{/with}}
+</div>
