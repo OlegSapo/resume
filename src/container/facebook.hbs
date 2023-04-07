@@ -1,0 +1,78 @@
+<hr>
+<hr>
+<div>
+    <main>
+
+        <h1 class="text-uppercase">{{name}}</h1>
+        <hr>
+
+        <span class="badge text-bg-primary">Users:</span><br>
+        <section>
+            {{#each users}}
+            <span class="badge text-bg-secondary">ID: </span><span>{{id}}</span><br>
+            <span class="badge text-bg-secondary">Name: </span><span>{{name}}</span><br>
+            <span class="badge text-bg-secondary">Gender: </span><span>{{gender}}</span><br>
+            <span class="badge text-bg-secondary">Age: </span><span>{{age}}</span><br>
+
+            <span class="badge text-bg-secondary">Friends: </span><br>
+            <section>
+                {{#each friends}}
+                <span class="badge text-bg-info">ID: </span><span>{{id}}</span><br>
+                <span class="badge text-bg-info">Name: </span><span>{{name}}</span><br>
+                <span class="badge text-bg-info">Gender: </span><span>{{gender}}</span><br>
+                <span class="badge text-bg-info">Age: </span><span>{{age}}</span><br>
+                <span class="badge text-bg-info">Mutual_friends: </span><br>
+                <section>
+                    {{#each mutual_friends}}
+                    <span class="badge text-bg-success">ID: </span><span>{{id}}</span><br>
+                    <span class="badge text-bg-success">Name: </span><span>{{name}}</span><br>
+                    <span class="badge text-bg-success">Gender: </span><span>{{gender}}</span><br>
+                    <span class="badge text-bg-success">Age: </span><span>{{age}}</span><br>
+                    {{/each}}
+                </section>
+                <span class="badge text-bg-info">Groups: </span><br>
+                <section>
+                    {{#each groups}}
+                    <span class="badge text-bg-success">ID: </span><span>{{id}}</span><br>
+                    <span class="badge text-bg-success">Name: </span><span>{{name}}</span><br>
+                    <span class="badge text-bg-success">Description: </span><q>{{description}}</q><br>
+                    <span class="badge text-bg-success">Members: </span><br>
+                    <section>
+                        {{#each members}}
+                        <span class="badge text-bg-warning">ID: </span><span>{{id}}</span><br>
+                        <span class="badge text-bg-warning">Name: </span><span>{{name}}</span><br>
+                        <span class="badge text-bg-warning">Gender: </span><span>{{gender}}</span><br>
+                        <span class="badge text-bg-warning">Age: </span><span>{{age}}</span><br>
+                        {{/each}}
+                    </section>
+                    {{/each}}
+                </section>
+                {{/each}}
+            </section>
+
+            {{#if groups}}
+            <span class="badge text-bg-secondary">Groups: </span>
+            <br>
+            <section>
+                {{#each groups}}
+                <span class="badge text-bg-info">ID: </span><span>{{id}}</span><br>
+                <span class="badge text-bg-info">Name: </span><span>{{name}}</span><br>
+                <span class="badge text-bg-info">Description: </span><span>,<q>{{description}}</q></span><br>
+                <span class="badge text-bg-info">Members: </span><br>
+                <section>
+                    {{#each members}}
+                    <span class="badge text-bg-success">ID: </span><span>{{id}}</span><br>
+                    <span class="badge text-bg-success">Name: </span><span>{{name}}</span><br>
+                    <span class="badge text-bg-success">Gender: </span><span>{{gender}}</span><br>
+                    <span class="badge text-bg-success">Age: </span><span>{{age}}</span><br>
+                    {{/each}}
+                </section>
+                {{/each}}
+            </section>
+            {{/if}}
+
+            {{/each}}
+        </section>
+
+    </main>
+</div>
