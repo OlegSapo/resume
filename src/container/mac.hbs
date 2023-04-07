@@ -1,0 +1,274 @@
+<hr>
+<hr>
+<div>
+    <main>
+
+        <h1>MAC</h1>
+        <hr>
+        <div>
+            <span class="badge text-bg-primary">Name: </span>
+            <span>{{name}}</span>
+            <br>
+        </div>
+        <div>
+            <span class="badge text-bg-primary">Description: </span>
+            <span>{{description}}</span>
+            <br>
+        </div>
+        <div>
+            <span class="badge text-bg-primary">Price: </span>
+            <span>{{price}}</span>
+            <br>
+        </div>
+        <div>
+            <span class="badge text-bg-primary">Category: </span>
+            <span>{{category}}</span>
+            <br>
+        </div>
+        <span class="badge text-bg-primary">Features: </span>
+
+        {{#with features}}
+        <section>
+            <div>
+                <span class="badge text-bg-secondary">Processor: </span>
+                <section>
+                    <div>
+                        <span class="badge text-bg-info">Brand: </span>
+                        <span>{{processor.brand}}</span>
+                        <br>
+                    </div>
+                    <div>
+                        <span class="badge text-bg-info">Model: </span>
+                        <span>{{processor.model}}</span>
+                        <br>
+                    </div>
+                    <div>
+                        <span class="badge text-bg-info">Speed: </span>
+                        <span>{{processor.speed}}</span>
+                        <br>
+                    </div>
+                    <div>
+                        <span class="badge text-bg-info">Cores: </span>
+                        <span>{{processor.cores}}</span>
+                        <br>
+                    </div>
+                    <div>
+                        <span class="badge text-bg-info">Cache: </span>
+                        <span>{{processor.cache}}</span>
+                        <br>
+                    </div>
+                </section>
+            </div>
+
+            <div>
+                <span class="badge text-bg-secondary">Memory: </span>
+                <section>
+                    <div>
+                        <span class="badge text-bg-info">Type: </span>
+                        <span>{{memory.type}}</span>
+                        <br>
+                    </div>
+                    <div>
+                        <span class="badge text-bg-info">Size: </span>
+                        <span>{{memory.size}}</span>
+                        <br>
+                    </div>
+                    <div>
+                        <span class="badge text-bg-info">Speed: </span>
+                        <span>{{memory.speed}}</span>
+                        <br>
+                    </div>
+                </section>
+            </div>
+
+            <div>
+                <span class="badge text-bg-secondary">Storage: </span>
+                <section>
+                    <div>
+                        <span class="badge text-bg-info">Type: </span>
+                        <span>{{storage.type}}</span>
+                        <br>
+                    </div>
+                    <div>
+                        <span class="badge text-bg-info">Size: </span>
+                        <span>{{storage.size}}</span>
+                        <br>
+                    </div>
+                </section>
+            </div>
+
+            <div>
+                <span class="badge text-bg-secondary">Display: </span>
+                <section>
+                    <div>
+                        <span class="badge text-bg-info">Size: </span>
+                        <span>{{display.size}}</span>
+                        <br>
+                    </div>
+                    <div>
+                        <span class="badge text-bg-info">Resolution: </span>
+                        <span>{{display.resolution}}</span>
+                        <br>
+                    </div>
+                    <div>
+                        <span class="badge text-bg-info">Technology: </span>
+                        <span>{{display.technology}}</span>
+                        <br>
+                    </div>
+                    <div>
+                        <span class="badge text-bg-info">Color_space: </span>
+                        <span>{{display.color_space}}</span>
+                        <br>
+                    </div>
+                    <div>
+                        <span class="badge text-bg-info">Brightness: </span>
+                        <span>{{display.brightness}}</span>
+                        <br>
+                    </div>
+                    <div>
+                        <span class="badge text-bg-info">Refresh_rate: </span>
+                        <span>{{display.refresh_rate}}</span>
+                        <br>
+                    </div>
+                </section>
+            </div>
+
+            <div>
+                <span class="badge text-bg-secondary">Graphics: </span>
+                <section>
+                    <div>
+                        <span class="badge text-bg-info">Brand: </span>
+                        <span>{{graphics.brand}}</span>
+                        <br>
+                    </div>
+                    <div>
+                        <span class="badge text-bg-info">Model: </span>
+                        <span>{{graphics.model}}</span>
+                        <br>
+                    </div>
+                    <div>
+                        <span class="badge text-bg-info">Memory: </span>
+                        <span>{{graphics.memory}}</span>
+                        <br>
+                    </div>
+                </section>
+            </div>
+
+            <div>
+                <span class="badge text-bg-secondary">Ports: </span>
+                <section>
+                    <div>
+                        <span class="badge text-bg-info">Type: </span>
+                        <span>{{ports.[0].type}}</span>
+                        <br>
+                    </div>
+                    <div>
+                        <span class="badge text-bg-info">Count: </span>
+                        <span>{{ports.[0].count}}</span>
+                        <br>
+                    </div>
+                    <div>
+                        <span class="badge text-bg-info">Features: </span>
+                        <ul>
+                            {{#each ports.[0].features}}
+                            <li>{{this}}</li>
+                            {{/each}}
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <div>
+                        <span class="badge text-bg-info">Type: </span>
+                        <span>{{ports.[1].type}}</span>
+                        <br>
+                    </div>
+                    <div>
+                        <span class="badge text-bg-info">Count: </span>
+                        <span>{{ports.[1].count}}</span>
+                        <br>
+                    </div>
+                </section>
+            </div>
+
+            <div>
+                <span class="badge text-bg-secondary">Battery: </span>
+                <section>
+                    <div>
+                        <span class="badge text-bg-info">Type: </span>
+                        <span>{{battery.type}}</span>
+                        <br>
+                    </div>
+                    <div>
+                        <span class="badge text-bg-info">Capacity: </span>
+                        <span>{{battery.capacity}}</span>
+                        <br>
+                    </div>
+                    <div>
+                        <span class="badge text-bg-info">Life: </span>
+                        <span>{{battery.life}}</span>
+                        <br>
+                    </div>
+                </section>
+            </div>
+
+            <div>
+                <span class="badge text-bg-info">Weight: </span>
+                <span>{{weight}}</span>
+                <br>
+            </div>
+
+            <div>
+                <span class="badge text-bg-secondary">Dimensions: </span>
+                <section>
+                    <div>
+                        <span class="badge text-bg-info">Height: </span>
+                        <span>{{dimensions.height}}</span>
+                        <br>
+                    </div>
+                    <div>
+                        <span class="badge text-bg-info">Width: </span>
+                        <span>{{dimensions.width}}</span>
+                        <br>
+                    </div>
+                    <div>
+                        <span class="badge text-bg-info">Depth: </span>
+                        <span>{{dimensions.depth}}</span>
+                        <br>
+                    </div>
+                </section>
+            </div>
+
+            <div>
+                <span class="badge text-bg-info">Operating_system: </span>
+                <span>{{operating_system}}</span>
+                <br>
+            </div>
+
+            <div>
+                <span class="badge text-bg-secondary">Accessories: </span>
+                <section>
+                    <ul>
+                        {{#each accessories}}
+                        <li>
+                            <div>
+                                <span class="badge text-bg-info">Name: </span>
+                                <span>{{name}}</span>
+                                <br>
+                            </div>
+
+                            <div>
+                                <span class="badge text-bg-info">Price: </span>
+                                <span>{{price}}</span>
+                                <br>
+                            </div>
+                        </li>
+                        {{/each}}
+                    </ul>
+                </section>
+            </div>
+        </section>
+        {{/with}}
+
+    </main>
+</div>
