@@ -27,7 +27,7 @@
         <div class="row g-2">
             {{#each newsBlock.cards}}
             <div class="col-3">
-                <div class="card">
+                {{!-- <div class="card">
                     <div class="card-header text-bg-secondary">
                         <span>{{title}}</span>
                         {{#if isNew}}
@@ -40,7 +40,8 @@
                     <div class="card-body text-bg-secondary">
                         <span>{{description}}</span>
                     </div>
-                </div>
+                </div> --}}
+                {{> shoppost crd=this}}
             </div>
             {{/each}}
         </div>
@@ -108,7 +109,6 @@
 
         {{!--
         <hr class="my-5">
-
         <div class="card text-bg-success">
             <h2 class="text-center pt-2">{{service.title}}</h2>
             <p class="text-center pb-0">{{service.description}}
@@ -121,38 +121,22 @@
 
         {{!--
         <hr class="my-5">
-
-        <div class="row g-1">
-            {{#each footer}}
-            <div class="nav col-2">
-                {{#each this}}
-                <div class="nav nav-item">
-                    {{#if @last}}
-                    <span class="ps-3">{{text}}</span>
-                    {{else}}
-                    <a class="nav-link" href={{link}}>{{text}}</a>
-                    {{/if}}
-                </div>
-                {{/each}}
-            </div>
-            {{/each}}
-        </div> --}}
-
-        {{!--
-        <hr class="my-5">
-
         <footer>
-            {{#each footer}}
-            <div class="nav col-2">
-                <div>
+            <div class="row g-1">
+                {{#each footer}}
+                <div class="nav col-2">
                     {{#each this}}
-                    <div>
-                        <a class="nav-link {{#if @last}} disable {{/if}}" href={{this.link}}>{{this.text}}</a>
+                    <div class="nav nav-item">
+                        {{#if @last}}
+                        <span class="ps-3">{{text}}</span>
+                        {{else}}
+                        <a class="nav-link" href={{link}}>{{text}}</a>
+                        {{/if}}
                     </div>
                     {{/each}}
                 </div>
+                {{/each}}
             </div>
-            {{/each}}
         </footer> --}}
 
     </main>

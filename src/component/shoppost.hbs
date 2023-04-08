@@ -1,0 +1,16 @@
+{{#with crd}}
+<div class="card">
+    <div class="card-header text-bg-secondary">
+        <span>{{title}}</span>
+        {{#if isNew}}
+        <span class="bardge text-bg-success rounded-pill">&nbsp;New&nbsp;</span>
+        {{/if}}
+        {{#if isTop}}
+        <span class="bardge text-bg-danger rounded-pill">&nbsp;Top&nbsp;</span>
+        {{/if}}
+    </div>
+    <div class="card-body text-bg-secondary">
+        <span>{{description}}</span>
+    </div>
+</div>
+{{/with}}

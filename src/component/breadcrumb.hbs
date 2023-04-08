@@ -1,0 +1,11 @@
+<ol class="breadcrumb">
+    {{#each brdcrmb}}
+    <li class="breadcrumb-item">
+        {{#if url}}
+        <a href={{url}}>{{name}}</a>
+        {{else}}
+        {{name}}
+        {{/if}}
+    </li>
+    {{/each}}
+</ol>
