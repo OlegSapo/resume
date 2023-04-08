@@ -4,9 +4,10 @@
     <main>
 
         <h1 class="text-uppercase">{{name}}</h1>
-        <hr>
+        <br>
 
         <span class="badge text-bg-primary">Users:</span><br>
+        <hr>
         <section>
             {{#each users}}
             <span class="badge text-bg-secondary">ID: </span><span>{{id}}</span><br>
@@ -30,6 +31,8 @@
                     <span class="badge text-bg-success">Age: </span><span>{{age}}</span><br>
                     {{/each}}
                 </section>
+
+                {{#if groups}}
                 <span class="badge text-bg-info">Groups: </span><br>
                 <section>
                     {{#each groups}}
@@ -47,6 +50,8 @@
                     </section>
                     {{/each}}
                 </section>
+                {{/if}}
+
                 {{/each}}
             </section>
 
@@ -71,6 +76,7 @@
             </section>
             {{/if}}
 
+            <hr>
             {{/each}}
         </section>
 

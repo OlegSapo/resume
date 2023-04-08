@@ -1,0 +1,41 @@
+<div>
+    <main>
+
+        {{> breadcrumb brdcrmb=breadcrumb}}
+
+        <div>
+            {{#with newsData}}
+            <picture class="col-12 text-center">
+                <img src={{photo}} alt="photo news" width="650">
+            </picture>
+            <br>
+            <div class="col-12">
+                <h2 class="mt-4">{{head.heading}}</h2>
+            </div>
+            <div class="my-3"><q>{{head.description}}</q></div>
+
+            {{#each body}}
+            <h3 class="mb-2"><b>{{title}}</b></h3>
+            <div class="mb-2"><q>{{text}}</q></div>
+            {{/each}}
+            {{/with}}
+        </div>
+
+        <hr class="my-5">
+
+        <div>
+            {{#with newsOtherBlock}}
+            <h3 class="text-center">{{title}}</h3>
+            <div class="row">
+                {{#each cards}}
+                <div class="col-3 g-2">
+                    {{> shoppost crd=this}}
+                </div>
+                {{/each}}
+            </div>
+            {{/with}}
+        </div>
+
+        <hr class="my-5">
+    </main>
+</div>
