@@ -25,7 +25,10 @@
     {{! ↓ ця кострукція показує куди шаблонізатору треба вставляти код з container файлу --}}
     {{{body}}}
 
+    {{#if ShopOther}}
     {{> shopaction srvc=service }}
+    {{/if}}
+
     <hr class="mt-5">
     {{> shopfooter ftr=footer }}
 

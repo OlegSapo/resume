@@ -9,9 +9,11 @@
         <div class="col-5">
             <div class="nav">
                 {{#each navgtn}}
+                {{#if href}}
                 <div class="nav-item pt-4 px-2">
                     <a href={{href}}>{{text}}</a>
                 </div>
+                {{/if}}
                 {{/each}}
                 <div class="nav-item pt-4 px-2">Disabled</div>
             </div>
