@@ -1,0 +1,26 @@
+{{#with crd}}
+<div class="row g-2">
+    <div class="col-4 ps-1">
+        <div>{{number}}</div>
+        <h4>{{status}}</h4>
+    </div>
+    <div class="col-2">
+        {{#with amount}}
+        <div>{{title}}</div>
+        <h5>{{value}}</h5>
+        {{/with}}
+    </div>
+    <div class="col-4">
+        {{#each images}}
+        <img src={{this}} alt="foto product" width="65" class="pe-1">
+        {{/each}}
+    </div>
+    <div class="col-2">
+        {{#with button}}
+        {{#if isPrimary}}
+        <a class="btn btn-primary ms-0" href={{link}}>{{text}}</a>
+        {{/if}}
+        {{/with}}
+    </div>
+</div>
+{{/with}}
