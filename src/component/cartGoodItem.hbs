@@ -1,0 +1,36 @@
+{{#with crd}}
+<div class="card mb-4">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-2">
+                <img src={{image}} alt="foto product">
+            </div>
+            <div class="col-4 ms-3">
+                <h5>{{name}}</h5>
+                <p>{{description}}</p>
+            </div>
+            <div class="col-2 pt-5">
+                <div>{{price.title}}</div>
+                <h5 class="pt-2">{{price.value}}</h5>
+            </div>
+            <div class="col-1 pt-5">
+                <div>{{amount}}</div>
+            </div>
+            <div class="col-2 pt-3">
+                {{#each buttons}}
+                {{#if isPrimary}}
+                <div>
+                    <button class="btn btn-primary">{{text}}</button>
+                </div>
+                {{/if}}
+                {{#if isDanger}}
+                <div>
+                    <button class="btn btn-outline-danger mt-3">{{text}}</button>
+                </div>
+                {{/if}}
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</div>
+{{/with}}

@@ -52,7 +52,11 @@
                         {{/with}}
                     </div> --}}
 
-                    {{> shoporderform frm=input}}
+                    {{!-- {{> shoporderform frm=input}} --}}
+                    {{> shoporderform frm=input.surname}}
+                    {{> shoporderform frm=input.name}}
+                    {{> shoporderform frm=input.phone}}
+                    {{> shoporderform frm=input.email}}
 
                     <hr class="my-4">
 
@@ -136,7 +140,11 @@
 
                 <h3 class="mt-3">{{contact.title}}</h3>
                 <div class="row">
-                    {{> shoporderform frm=contact}}
+                    {{!-- {{> shoporderform frm=contact}} --}}
+                    {{> shoporderform frm=contact.surname}}
+                    {{> shoporderform frm=contact.name}}
+                    {{> shoporderform frm=contact.phone}}
+                    {{> shoporderform frm=contact.email}}
                 </div>
                 <hr class="my-4">
 
