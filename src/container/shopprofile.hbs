@@ -26,13 +26,13 @@
             <div class="col-8">
                 {{#each buttons}}
                 {{#if isSuccess}}
-                <a class="btn btn-success me-1" href={{link}}>{{text}}</a>
+                <a class="btn btn-success me-1" href={{link}} target="_blank">{{text}}</a>
                 {{/if}}
                 {{#if isOutline}}
-                <a class="btn btn-outline-success me-1" href={{link}}>{{text}}</a>
+                <a class="btn btn-outline-success me-1" href={{link}} target="_blank">{{text}}</a>
                 {{/if}}
                 {{#if isDanger}}
-                <a class="btn btn-outline-danger me-1" href={{link}}>{{text}}</a>
+                <a class="btn btn-outline-danger me-1" href={{link}} target="_blank">{{text}}</a>
                 {{/if}}
                 {{/each}}
             </div>
@@ -113,13 +113,13 @@
                     {{#each buttons}}
                     <div class="col-4 mt-3">
                         {{#if isPrimary}}
-                        <a class="btn btn-primary" href={{link}}>{{text}}</a>
+                        <a class="btn btn-primary" href={{link}} target="_blank">{{text}}</a>
                         {{/if}}
                         {{#if isSecondary}}
-                        <a class="btn btn-outline-secondary" href={{link}}>{{text}}</a>
+                        <a class="btn btn-outline-secondary" href={{link}} target="_blank">{{text}}</a>
                         {{/if}}
                         {{#if isDanger}}
-                        <a class="btn btn-outline-danger" href={{link}}>{{text}}</a>
+                        <a class="btn btn-outline-danger" href={{link}} target="_blank">{{text}}</a>
                         {{/if}}
                     </div>
                     {{/each}}
@@ -136,7 +136,7 @@
                     <div class="col-4">
                         <h6 class="mb-0">{{name}}</h6>
                         <div class="mt-0">{{phone}}</div>
-                        <a class="btn btn-primary mt-4" href={{button.link}}>{{button.text}}</a>
+                        <a class="btn btn-primary mt-4" href={{button.link}} target="_blank">{{button.text}}</a>
                     </div>
                     {{/each}}
                     {{/with}}
@@ -166,13 +166,13 @@
                     {{#each buttons}}
                     <div class="col-4">
                         {{#if isPrimary}}
-                        <a class="btn btn-primary" href={{link}}>{{text}}</a>
+                        <a class="btn btn-primary" href={{link}} target="_blank">{{text}}</a>
                         {{/if}}
                         {{#if isSecondary}}
-                        <a class="btn btn-outline-secondary" href={{link}}>{{text}}</a>
+                        <a class="btn btn-outline-secondary" href={{link}} target="_blank">{{text}}</a>
                         {{/if}}
                         {{#if isDanger}}
-                        <a class="btn btn-outline-danger" href={{link}}>{{text}}</a>
+                        <a class="btn btn-outline-danger" href={{link}} target="_blank">{{text}}</a>
                         {{/if}}
                     </div>
                     {{/each}}
